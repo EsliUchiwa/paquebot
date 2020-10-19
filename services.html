@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,76 +8,69 @@
 
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header>
-        <section>
-                    <div class="top-header row">
-                        <div class=" col-8 offset-2 ">
-                        
-                            <div class="row">
-                            <div class="col-sm">
-                                <img class="img-fluid" src="img/gauche.webp" alt="">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="img/logo.webp" alt="">
-                            </div>
-                            <div class="col-sm">
-                                <img class="img-fluid" src="img/droit.webp" alt="">
-                            </div>
-                            </div>
-                        </div>           
+    <header class="fixed-header">
+        <!-- banner -->
+        <div class="banner">  <img src="img/banniere.PNG" alt="" class="img-fluid"></div>
+        <!-- nav  -->
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light">
+            <a class="btn btn-danger rouge d-md-none d-sm-block d-xs-block d-lg-none" href="#">Reserver</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">ACCUEIL </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hotel.html">L'HOTEL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">SERVICES</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      CHAMBRES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="chambres_standard.html"">STANDARD</a>
+                      <a class="dropdown-item" href="chambres_standard_premium.html">STANDARD PREMIUM</a>
+                      <a class="dropdown-item" href="chambres_classique.html">CLASSIQUE</a>
+                      <a class="dropdown-item" href="chambres_appartement.html">APPARTEMENT (STUDIO)</a>
+                      <a class="dropdown-item" href="chambres_appartement_2.html">APPART0EMENT 02 PIECES</a>
                     </div>
-
-            <!-- navbar -->
-                
-                <div class="navv ">
-                    <ul>
-                        <li>
-                            <a href="index.html">ACCUEIL</a>
-                        </li>
-                        <li>
-                            <a href="hotel.html">L'HOTEL</a>
-                        </li>
-                        <li>
-                            <a href="services.html">SERVICES</a>
-                        </li>
-                        <li>
-                            <a href="chambres.html">CHAMBRES</a>
-                            <ul>
-                                <li> <a href="chambres_standard.html">CHAMBRE STANDARD</a></li>
-                                <li> <a href="chambres_standard_premium.html">CHAMBRE STANDARD PREMIUM</a></li>
-                                <li> <a href="chambres_classique.html">CHAMBRE CLASSIQUE</a></li>
-                                <li> <a href="chambres_appartement.html">APPARTEMENT (STUDIO) </a></li>
-                
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="decouvrir_cotonou.html">DECOUVRIR COTONOU</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">CONTACT</a>
-                        </li>
-                        <li class="reserver">
-                            <a href="reserver.html">RESERVER</a>
-                        </li>
-                
-                
-                    </ul>
-                </div>
-            <!-- navbar -->
-        </section>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="decouvrir_cotonou.html">COTONOU</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">CONTACT</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link rouge h-100 d-none d-md-block " href="#">RESERVER</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <!-- end nav -->
     </header>
 
     <main class="main pb-3">
     <div class="texte-description p-3 m-3">
         <p class="">
-            <span class="display-4 rouge">HOTEL LE PAQUEBOT </span> <br> <span class="h3 text-secondary">COTONOU</span>
+            <span class="display-4 red">HOTEL LE PAQUEBOT </span> <br> <span class="h3 text-secondary">COTONOU</span>
         </p>
         <p class="text-justify pt-2 pb-1 ">
             Nos 40 chambres entièrement rénovées bénéficient d'un confort optimisé, pour des vacances en couple, entre amis ou en famille.
