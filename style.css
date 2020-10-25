@@ -48,6 +48,10 @@ li,
         display: block;
         font-size: smaller;
     }
+    .titre_chambre {
+        display: block;
+        font-size: 32px !important;
+    }
 }
 
 .banner img {
