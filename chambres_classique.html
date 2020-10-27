@@ -64,7 +64,7 @@
                         <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link rouge h-100 d-none d-md-block " href="#">RESERVER</a>
+                        <a class="nav-link rouge h-100 d-none d-md-block " href="reserver.html">RESERVER</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +92,7 @@
         </div>
 
         <div class="text-center p-3">
-            <a href="#" class="btn btn-danger stretched-link rouge">RESERVER</a>
+            <a href="reserver.html" class="btn btn-danger stretched-link rouge">RESERVER</a>
 
         </div>
     </main>
@@ -140,10 +140,86 @@
         </div>
     </footer>
 
+    <footer>
+        <!-- Contact Me
+    ============================================= -->
+        <div id="contact" class=" ">
+
+            <!-- Heading -->
+
+            <!-- Heading end-->
+            <div class="row offset-1 mb-3 pt-2 pl-1 pr-1">
+                <div class=" col-sm-10 col-md-4 col-lg-4 order-1 order-md-0 text-center text-md-left mt-5 mt-md-0 text-justify">
+                    <h2 class="mb-3 text-5 text-uppercase">Hotel Le Paquebot</h2>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Adresse postale: </span> 08 BP 431 Cotonou BENIN.</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Adresse physique: </span> Rue 12 .117 Route de l'aéroport COTONOU BENIN</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Coordonnées GPS: </span>GPS : 6° 35’684’’/2’38’445’</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Tel: </span> (00229) 60 10 75 75</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Tel: </span> (00229) 62 08 02 02 (Whatsapp)</p>
+                    <p class="text-3  mb-4"> <span class="font-weight-bold"> Email: </span> welcometopaquebot@gmail.com</p>
+                    <p class="text-md-left  ">
+                        <a href="#" class="fab  fa-2x fa-tripadvisor"></a>
+                        <a href="#" class="fab  fa-2x fa-facebook"></a>
+                        <a href="#" class="fab  fa-2x fa-instagram"></a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="btn btn-outline-danger h4"> Nous contacter</a>
+                    </p>
+                </div>
+
+                <div class="gmap col-sm-10 col-md-6 col-lg-8 pt-2 ">
+                    <!-- <img class="img-fluid h-75" src="img/gmap.png" alt=""> -->
+                    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                        <a href="https://1map.com/fr/map-embed">1 Map</a></div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- Contact Me end -->
+
+        <div class="down-footer footer text-white ">
+            <p style="text-align:center;">
+                <span> © 2020 -  <a href="">Hôtel Le Paquebot</a> - <a href="">Mentions Légales</a> </span>
+            </p>
+        </div>
+    </footer>
+
     <script>
     </script>
 
     <script src="script.js"></script>
+
+    <script>
+        (function() {
+            var setting = {
+                "height": 400,
+                "width": 755,
+                "zoom": 16,
+                "queryString": "Hotel le Paquebot Cotonou, derrière unicef, Route de l'aéroport, Cotonou, Bénin",
+                "place_id": "ChIJDTZb-N9VIxARPKvVKX_8IXA",
+                "satellite": false,
+                "centerCoord": [6.352742851768003, 2.3904444499999933],
+                "cid": "0x7021fc7f29d5ab3c",
+                "lang": "fr",
+                "cityUrl": "/benin/cotonou-15896",
+                "cityAnchorText": "Carte de Cotonou, Cotonou, Bénin",
+                "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                "embed_id": "296224"
+            };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=296224';
+            s.async = true;
+            s.onload = function(e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+        })();
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

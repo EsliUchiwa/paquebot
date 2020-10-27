@@ -73,270 +73,589 @@
     </header>
 
     <main class="main">
-
+        <!-- titre hotel  -->
         <div class="container reservation-box">
             <div class="bg-secondary text-white p-3 ">
-                <h3 class="text-left pl-5"> Hotel Le Paquebot</h3>
+                <h3 class="text-left pl-5"> Hotel Le Paquebot ***</h3>
             </div>
-
-            <!-- formulaire -->
-            <div class="formulaire pl-5">
-                <div id="booking" class="section">
-                    <div class="section-center">
-                        <div class="container">
-                            <div class="row">
-                                <div class="booking-form">
-                                    <div class="form-header">
-                                        <h2>Faites votre reservation</h2>
-                                    </div>
-                                    <form>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <span class="form-label">Date d'arrivée</span>
-                                                    <input class="form-control" type="date" required="">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <span class="form-label">Date de départ</span>
-                                                    <input class="form-control" type="date" required="">
-                                                </div>
+            <!-- client+ occupants + type de chambre  -->
+            <div id="booking" class=" ">
+                <div class="section-center">
+                    <div class="container bg-white pl-5">
+                        <div class="row">
+                            <div class="booking-form">
+                                <div class="form-header">
+                                    <h3>Faites votre réservation</h3>
+                                </div>
+                                <form>
+                                    <div class="row">
+                                        <!-- type de chambre  -->
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Type de chambre</label>
+                                                <select name="booking-roomtype" class="form-control" title="Select Room Type" data-header="Select Room Type">
+                                                    <option value="Standard" data-subtext="<span class='badge badge-info'>€89 / night</span>">Standard
+                                                    </option>
+                                                    <option value="Standard premium" data-subtext="<span class='badge badge-info'>€89 / night</span>">Standard premium
+                                                    </option>
+                                                    <option value="Classique" data-subtext="<span class='badge badge-info'>€89 / night</span>">Classique
+                                                    </option>
+                                                    <option value="Studio" data-subtext="<span class='badge badge-info'>€89 / night</span>">Studio
+                                                    </option>
+                                                    <option value="Appartement 2 pièces (Salon + Chambre à coucher)" data-subtext="<span class='badge badge-info'> €129 / night</span>">Appartement 2 pièces (Salon + Chambre à coucher)
+                                                    </option>
+                                                    <option value="Appartement flexible (Salon + Salle à manger + cuisine)" data-subtext="<span class='badge badge-info'>€129 / night</span>">Appartement flexible (Salon + Salle à manger + cuisine)
+                                                    </option>
+                                                    <option value="Appartement flexible (Salon + Salle à manger + cuisine + 2 chambres )" data-subtext="<span class='badge badge-info'>€129 / night</span>">Appartement flexible (Salon + Salle à manger + cuisine + 2 chambres )
+                                                    </option>
+                                                    <option value="Appartement flexible (Salon + Salle à manger + cuisine + 2 chambres )" data-subtext="<span class='badge badge-info'>€129 / night</span>">Appartement flexible (Salon + Salle à manger + cuisine + 3 chambres )
+                                                    </option>
+                                                    <option value="Appartement flexible (Salon + Salle à manger + cuisine + 2 chambres )" data-subtext="<span class='badge badge-info'>€129 / night</span>">Appartement flexible (Salon + Salle à manger + cuisine + 4 chambres )
+                                                    </option>
+                                                    
+                                                                                                        
+                                                </select>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Adultes</span>
-                                                    <select class="form-control">
+                                        <!-- date entrée -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Date d'arrivée</span>
+                                                <input class="form-control" type="date" required="">
+                                            </div>
+                                        </div>
+                                        <!-- date sortie  -->
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <span class="form-label">Date de départ</span>
+                                                <input class="form-control" type="date" required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Nombre de chambres</span>
+                                                <select class="form-control">
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                     </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
+                                                <span class="select-arrow"></span>
                                             </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Enfants</span>
-                                                    <select class="form-control">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <span class="form-label">Adultes</span>
+                                                <select class="form-control">
                                                         <option>1</option>
                                                         <option>2</option>
                                                         <option>3</option>
                                                     </select>
-                                                    <span class="select-arrow"></span>
-                                                </div>
+                                                <span class="select-arrow"></span>
                                             </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <span class="form-label">Bébés (&lt 3 ) </span>
-                                                    <select class="form-control">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <span class="form-label">Enfants</span>
+                                                <select class="form-control">
                                                         <option>0</option>
                                                         <option>1</option>
                                                         <option>2</option>
                                                     </select>
-                                                    <span class="select-arrow"></span>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <span class="form-label">Bébés</span>
+                                                <select class="form-control">
+                                                        <option>0</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                    </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button class="submit-btn btn rouge">Ajouter plus</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- form Paiement  -->
+            <div class="container">
+                <div class="row bg-white pb-5 pt-3">
+                    <div class="col-lg-9 col-12">
+                        <div class="section-title">
+                            <h4>Paiement</h4>
+                            <p class="section-subtitle">Détails du client</p>
+                        </div>
+
+                        <form class="booking-form-advanced" id="booking-form">
+                            <div class="row">
+                                <!-- prénom* -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Prénom</label>
+                                        <input name="booking-name" type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <!-- nom* -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Nom</label>
+                                        <input name="booking-surname" type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <!-- email*  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Email </label>
+                                        <input class="form-control" name="booking-email" type="email" placeholder="Your Email Address">
+                                    </div>
+                                </div>
+                                <!-- telephone *  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Téléphone *</label>
+                                        <input name="booking-phone" type="text" class="form-control" placeholder="Your Phone Number">
+                                    </div>
+                                </div>
+                                <!-- adresse 1 * -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Adresse 1 *</label>
+                                        <input name="adresse1" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- adresse 2  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Adresse 2</label>
+                                        <input name="booking-adresse2" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- ville * -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Ville *</label>
+                                        <input name="booking-ville" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- etat  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Etat</label>
+                                        <input name="booking-etat" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- pays * -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Pays</label>
+                                        <select name="booking-country" class="form-control" title="Select Your Country" data-header="Select Your Country" data-live-search="true" data-size="5">
+<option value="Afganistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antigua &amp; Barbuda">Antigua &amp; Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bonaire">Bonaire</option>
+<option value="Bosnia &amp; Herzegovina">Bosnia &amp; Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Brazil">Brazil</option>
+<option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+<option value="Brunei">Brunei</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Canary Islands">Canary Islands</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Channel Islands">Channel Islands</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos Island">Cocos Island</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Cote DIvoire">Cote D'Ivoire</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Curaco">Curacao</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Falkland Islands">Falkland Islands</option>
+<option value="Faroe Islands">Faroe Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="French Southern Ter">French Southern Ter</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Great Britain">Great Britain</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Hawaii">Hawaii</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Isle of Man">Isle of Man</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Korea North">Korea North</option>
+<option value="Korea Sout">Korea South</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macau">Macau</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Malawi">Malawi</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Midway Islands">Midway Islands</option>
+<option value="Moldova">Moldova</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Nambia">Nambia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherland Antilles">Netherland Antilles</option>
+<option value="Netherlands">Netherlands (Holland, Europe)</option>
+<option value="Nevis">Nevis</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niue">Niue</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau Island">Palau Island</option>
+<option value="Palestine">Palestine</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Phillipines">Philippines</option>
+<option value="Pitcairn Island">Pitcairn Island</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Republic of Montenegro">Republic of Montenegro</option>
+<option value="Republic of Serbia">Republic of Serbia</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="St Barthelemy">St Barthelemy</option>
+<option value="St Eustatius">St Eustatius</option>
+<option value="St Helena">St Helena</option>
+<option value="St Kitts-Nevis">St Kitts-Nevis</option>
+<option value="St Lucia">St Lucia</option>
+<option value="St Maarten">St Maarten</option>
+<option value="St Pierre &amp; Miquelon">St Pierre &amp; Miquelon</option>
+<option value="St Vincent &amp; Grenadines">St Vincent &amp; Grenadines</option>
+<option value="Saipan">Saipan</option>
+<option value="Samoa">Samoa</option>
+<option value="Samoa American">Samoa American</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome &amp; Principe">Sao Tome &amp; Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Tahiti">Tahiti</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad &amp; Tobago">Trinidad &amp; Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks &amp; Caicos Is">Turks &amp; Caicos Is</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Erimates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States of America">United States of America</option>
+<option value="Uraguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Vatican City State">Vatican City State</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+<option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+<option value="Wake Island">Wake Island</option>
+<option value="Wallis &amp; Futana Is">Wallis &amp; Futana Is</option>
+<option value="Yemen">Yemen</option>
+<option value="Zaire">Zaire</option>
+<option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- code postal *  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Code postal *</label>
+                                        <input name="booking-poste" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- organisation  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Organisation</label>
+                                        <input name="booking-organisation" type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- heure d'arrivée prévue  -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Heure d'arrivée
+                                        <a href="#" title="Check-In / Check-Out" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please select check-in and check-out date *Check In from 11:00am"
+                                        <i class="fa fa-info-circle"></i>
+                                        </a>
+                                    </label>
+                                        <input type="text" class="datepicker form-control " name="booking-date" readonly="readonly">
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Guests
+                                        <a href="#" title="Guests" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Please Select Adults / Children">
+                                        <i class="fa fa-info-circle"></i>
+                                        </a>
+                                            </label>
+                                        <div class="panel-dropdown">
+                                            <div class="form-control guestspicker">Guests
+                                                <span class="gueststotal"></span></div>
+                                            <div class="panel-dropdown-content">
+                                                <div class="guests-buttons">
+                                                    <label>Adults
+                                        <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="18+ years" data-original-title="Adults">
+                                        <i class="fa fa-info-circle"></i>
+                                                    </a>
+                                                        </label>
+                                                    <div class="guests-button">
+                                                        <div class="minus"></div>
+                                                        <input type="text" name="booking-adults" class="booking-guests" value="0">
+                                                        <div class="plus"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="guests-buttons">
+                                                    <label>Cildren
+                                        <a href="#" title="" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="Under 18 years" data-original-title="Children">
+                                        <i class="fa fa-info-circle"></i>
+                                                    </a>
+                                                        </label>
+                                                    <div class="guests-button">
+                                                        <div class="minus"></div>
+                                                        <input type="text" name="booking-children" class="booking-guests" value="0">
+                                                        <div class="plus"></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
+                                </div> -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Commentaires</label>
+                                        <textarea class="form-control" name="booking-comments"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <button type="submit" class="btn btn-success mt50 float-left">
+                                        <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                        Réserver
+                                    </button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="menu-chambres">
-                <div class="rooms-chambres m-3 ">
-                    <!-- chambre standard -->
-                    <div class="bs-example">
-                        <div class="card" style="max-width: 1000px;">
-                            <div class="row no-gutters">
-                                <div class="col-sm-7">
-                                    <div class="card-body">
-                                        <h3 class="card-title"> <span class="red"> CHAMBRE STANDARD</span> </h3>
-                                        <hr>
-                                        <p class="card-text">Chambres doubles et climatisées, elles sont très lumineuses grâce à leurs fenêtres exposées ouest. Elles sont toutes équipées d'un grand lit de 03 places et disposent d'une salle de bain. D'une superficie d'au moins
-                                            20m², elles représentent le meilleur rapport qualité/prix.</p>
-                                        <a href="chambres_standard.html" class="btn btn-outline-secondary stretched-link">EN SAVOIR +</a>
-                                        <a href="#" class="btn btn-danger stretched-link rouge">RESERVER</a>
-                                        <div class="container-fluid pt-3">
-                                            <i class="fas fa-wifi"></i>
-                                            <i class="fas fa-tv"></i>
-                                            <i class="fas fa-phone"></i>
-                                            <i class="fas fa-ustensils"></i>
-                                            <i class="fas fa-concierge-bell"></i>
-                                            <i class="fas fa-wheelchair"></i>
-                                            <i class="fas fa-washer"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-5" style="background: #868e96;">
-                                    <img src="img/room1.webp" class="card-img-top h-100" alt="...">
-                                </div>
-
-                            </div>
-                        </div>
+                        </form>
                     </div>
 
-                    <!-- chambre standard premium -->
-                    <div class="bs-example">
-                        <div class="card" style="max-width: 1000px;">
-                            <div class="row no-gutters">
-                                <div class="col-sm-7">
-                                    <div class="card-body card-ch">
-                                        <h3 class="card-title"> <span class="red"> CHAMBRE STANDARD PREMIUM </span> </h3>
+                    <div class="col-lg-3 col-12">
+                        <div class="sidebar">
+                            <div class="contact-details">
+                                <div class="card bg-secondary mb-3" style="max-width: 18rem;">
+                                    <div class="card-header text-white font-weight-bold">Résumé de la réservation</div>
+                                    <div class="card-body bg-light" style="font-size: 13px !important;">
+                                        <!-- arrivée  -->
+                                        <h5 class="card-title">Arrivée :</h5>
+                                        <p class="card-text">
+                                            <span>Lundi 26, octobre 2020</span>
+                                            <span>
+                                                <a href="#" class="red float-right"> Modifier</a>
+                                            </span>
+                                        </p>
+                                        <!-- départ  -->
+                                        <h5 class="card-title">Départ :</h5>
+                                        <p class="card-text">
+                                            <span>Mardi 27, octobre 2020</span>
+                                            <span>
+                                                <a href="#" class="red float-right"> Modifier</a>
+                                            </span>
+                                        </p>
                                         <hr>
-                                        <p class="card-text"> Chambres doubles et climatisées, elles sont très lumineuses grâce à 02 ouvertures exposées est et ouest. Elles disposent toutes d'un grand lit de 02 places, d'un canapé 03 places ou de 02 fauteuils. Elles s'étendent
-                                            environs sur 25m² et peuvent recevoir sur demande 01 lit pour enfant.</p>
-                                        <a href="chambres_standard_premium.html" class="btn btn-outline-secondary stretched-link">EN SAVOIR +</a>
-                                        <a href="#" class="btn btn-danger stretched-link rouge">RESERVER</a>
-                                        <div class="container-fluid pt-3">
-                                            <i class="fas fa-wifi"></i>
-                                            <i class="fas fa-tv"></i>
-                                            <i class="fas fa-phone"></i>
-                                            <i class="fas fa-ustensils"></i>
-                                            <i class="fas fa-concierge-bell"></i>
-                                            <i class="fas fa-wheelchair"></i>
-                                            <i class="fas fa-washer"></i>
+                                        <!-- chambres  -->
+                                        <h5 class="">Chambre</h5>
+                                        <p class="card-text">
+                                            Chambre Standard
+                                        </p>
+                                        <p>
+                                            <span>
+                                                Tarif Standard
+                                            </span>
+                                            <span class="float-right">
+                                                FCFA 35.000
+                                            </span>
+                                        </p>
+                                        <hr>
+                                        <!-- bilan  -->
+                                        <div class="font-weight-bold">
+                                            <p>
+                                                <span>
+                                                    Frais Chambre
+                                                </span>
+                                                <span class="float-right">
+                                                    FCFA 35.000
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>
+                                                    Autres frais
+                                                </span>
+                                                <span class="float-right">
+                                                    FCFA 0.000
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span>
+                                                    Total général
+                                                </span>
+                                                <span class="float-right">
+                                                    FCFA 35.000
+                                                </span>
+                                            </p>
                                         </div>
+
                                     </div>
 
-                                </div>
-                                <div class="col-sm-5" style="background: #868e96;">
-                                    <img src="img/room2.webp" class="card-img-top h-100" alt="...">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- chambre classique -->
-                    <div class="bs-example">
-                        <div class="card" style="max-width: 1000px;">
-                            <div class="row no-gutters">
-                                <div class="col-sm-7">
-                                    <div class="card-body card-ch">
-                                        <h3 class="card-title"> <span class="red">  CHAMBRE CLASSIQUE</span> </h3>
-                                        <hr>
-                                        <p class="card-text">Chambres doubles et climatisées, elles sont très lumineuses, grâce à leurs fenêtres donnant sur la piscine. Elles sont équipées d'un grand lit de 03 places, d'un canapé 03 places ainsi que d'un meuble de rangement
-                                            offrant plusieurs espaces. Elles s'étendent sur environ 50m² et disposent d'une salle de bain avec baignoire. On peut y mettre sur demande un lit pour enfant.</p>
-                                        <a href="chambres_classique.html" class="btn btn-outline-secondary stretched-link">EN SAVOIR +</a>
-                                        <a href="#" class="btn btn-danger stretched-link rouge">RESERVER</a>
-                                        <div class="container-fluid pt-3">
-                                            <i class="fas fa-wifi"></i>
-                                            <i class="fas fa-tv"></i>
-                                            <i class="fas fa-phone"></i>
-                                            <i class="fas fa-ustensils"></i>
-                                            <i class="fas fa-concierge-bell"></i>
-                                            <i class="fas fa-wheelchair"></i>
-                                            <i class="fas fa-washer"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-5" style="background: #868e96;">
-                                    <img src="img/room3.webp" class="card-img-top h-100" alt="...">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- chambre appartement -->
-                    <div class="bs-example">
-                        <div class="card" style="max-width: 1000px;">
-                            <div class="row no-gutters ">
-                                <div class="col-sm-7">
-                                    <div class="card-body card-ch">
-                                        <h3 class="card-title"> <span class="red">CHAMBRE APPARTEMENT (STUDIO) </span> </h3>
-                                        <hr>
-                                        <p class="card-text"> Chambre double, elle s'étend sur environ 70m² et dispose d'une cuisine équipée, d'une grande salle de bains disposant d'une baignoire ainsi que d'un séjour et d'un grand lit de 03 places. On peut y disposer un lit
-                                            supplémentaire sur demande; convenable pour petite famille.</p>
-                                        <a href="chambres_appartement.html" class="btn btn-outline-secondary stretched-link">EN SAVOIR +</a>
-                                        <a href="#" class="btn btn-danger stretched-link rouge">RESERVER</a>
-                                        <div class="container-fluid pt-3 text-sm-center">
-                                            <i class="fas fa-wifi"></i>
-                                            <i class="fas fa-tv"></i>
-                                            <i class="fas fa-phone"></i>
-                                            <i class="fas fa-ustensils"></i>
-                                            <i class="fas fa-concierge-bell"></i>
-                                            <i class="fas fa-wheelchair"></i>
-                                            <i class="fas fa-washer"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-5" style="background: #868e96;">
-                                    <img src="img/room4.webp" class="card-img-top h-100" alt="...">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- chambre appartement -->
-                    <div class="bs-example">
-                        <div class="card" style="max-width: 1000px;">
-                            <div class="row no-gutters">
-                                <div class="col-sm-7">
-                                    <div class="card-body">
-                                        <h3 class="card-title"> <span class="red">  CHAMBRE APPARTEMENT 02 PIECES</span> </h3>
-                                        <hr>
-                                        <p class="card-text"> Appartement sur 02 niveaux dispose au 1er étage d'un grand salon avec WC visiteur et d'une kitchennette et au 1er d'une grande chambre avec plusieurs rangements et une salle de bain. Elle s'étend au total sur 160m²
-                                            soit 80m²/niveau. Elle dispose d'une cour privative de 10m² environ; on y accède par une entrée privative, ce qui donne l'impression d'être dans une maison à part. Chambre double, elle s'étend sur environ 70m²
-                                            et dispose d'une cuisine équipée, d'une grande salle de bains disposant d'une baignoire ainsi que d'un séjour et d'un grand lit de 03 places. On peut y disposer un lit supplémentaire sur demande; convenable
-                                            pour petite famille.</p>
-                                        <a href="chambres_appartement_2.html" class="btn btn-outline-secondary stretched-link">EN SAVOIR +</a>
-                                        <a href="#" class="btn btn-danger stretched-link pt-2 rouge">RESERVER</a>
-                                        <div class="container-fluid pt-3">
-                                            <i class="fas fa-wifi"></i>
-                                            <i class="fas fa-tv"></i>
-                                            <i class="fas fa-phone"></i>
-                                            <i class="fas fa-ustensils"></i>
-                                            <i class="fas fa-concierge-bell"></i>
-                                            <i class="fas fa-wheelchair"></i>
-                                            <i class="fas fa-washer"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-5" style="background: #868e96;">
-                                    <img src="img/room4.webp" class="card-img-top h-100" alt="...">
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- chambre appartement -->
-                    <div class="bs-example">
-                        <div class="card" style="max-width: 1000px;">
-                            <div class="row no-gutters">
-                                <div class="col-sm-7">
-                                    <div class="card-body">
-                                        <h3 class="card-title "> <span class="red">  CHAMBRE APPARTEMENT 2/3/4 PIECES</span> </h3>
-                                        <hr>
-                                        <p class="card-text">Appartement modulable, il dispose d'un grand salon, d'une grande salle à manger et d'une grande cuisine avec possibilité d'un coin bureau. On peut l'occuper avec 1/2/3 chambres à cucher selon le choix. Toutes les
-                                            pièces y sont naturellement climatisées.</p>
-                                        <a href="chambres_appartement_2_3_4.html" class="btn btn-outline-secondary stretched-link">EN SAVOIR +</a>
-                                        <a href="#" class="btn btn-danger stretched-link pt-2 rouge">RESERVER</a>
-                                        <div class="container-fluid pt-3 ">
-                                            <i class="fas fa-wifi"></i>
-                                            <i class="fas fa-tv"></i>
-                                            <i class="fas fa-phone"></i>
-                                            <i class="fas fa-ustensils"></i>
-                                            <i class="fas fa-concierge-bell"></i>
-                                            <i class="fas fa-wheelchair"></i>
-                                            <i class="fas fa-washer"></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-5" style="background: #868e96;">
-                                    <img src="img/room4.webp" class="card-img-top h-100" alt="...">
                                 </div>
 
                             </div>
@@ -344,28 +663,25 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
     </main>
 
     <footer>
         <!-- Contact Me
-  ============================================= -->
+    ============================================= -->
         <div id="contact" class=" ">
 
             <!-- Heading -->
 
             <!-- Heading end-->
-            <div class="row mb-3 pt-2 offset-1">
+            <div class="row offset-1 mb-3 pt-2 pl-1 pr-1">
                 <div class=" col-sm-10 col-md-4 col-lg-4 order-1 order-md-0 text-center text-md-left mt-5 mt-md-0 text-justify">
                     <h2 class="mb-3 text-5 text-uppercase">Hotel Le Paquebot</h2>
-                    <p class="text-3 text-50 mb-1"> <span class="font-weight-bold">Adresse postale: </span> 08 BP 431 Cotonou BENIN.</p>
-                    <p class="text-3 text-50 mb-1"> <span class="font-weight-bold">Adresse physique: </span> Rue 12 .117 Route de l'aéroport COTONOU BENIN</p>
-                    <p class="text-3 text-50 mb-1"> <span class="font-weight-bold">Coordonnées GPS: </span>GPS : 6° 35’684’’/2’38’445’</p>
-                    <p class="text-3 text-50 mb-1"> <span class="font-weight-bold">Tel: </span> (00229) 60 10 75 75</p>
-                    <p class="text-3 text-50 mb-1"> <span class="font-weight-bold">Tel: </span> (00229) 62 08 02 02 (Whatsapp)</p>
-                    <p class="text-3 text-50 mb-4"> <span class="font-weight-bold"> Email: </span> welcometopaquebot@gmail.com</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Adresse postale: </span> 08 BP 431 Cotonou BENIN.</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Adresse physique: </span> Rue 12 .117 Route de l'aéroport COTONOU BENIN</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Coordonnées GPS: </span>GPS : 6° 35’684’’/2’38’445’</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Tel: </span> (00229) 60 10 75 75</p>
+                    <p class="text-3  mb-1"> <span class="font-weight-bold">Tel: </span> (00229) 62 08 02 02 (Whatsapp)</p>
+                    <p class="text-3  mb-4"> <span class="font-weight-bold"> Email: </span> welcometopaquebot@gmail.com</p>
                     <p class="text-md-left  ">
                         <a href="#" class="fab  fa-2x fa-tripadvisor"></a>
                         <a href="#" class="fab  fa-2x fa-facebook"></a>
@@ -376,8 +692,11 @@
                     </p>
                 </div>
 
-                <div class="gmap col-sm-10 col-md-6 col-lg-6 pt-3 mr-3">
-                    <img class="img-fluid h-75" src="img/gmap.png" alt="">
+                <div class="gmap col-sm-10 col-md-6 col-lg-8 pt-2 ">
+                    <!-- <img class="img-fluid h-75" src="img/gmap.png" alt=""> -->
+                    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                        <a href="https://1map.com/fr/map-embed">1 Map</a></div>
                 </div>
             </div>
 
@@ -396,6 +715,36 @@
     </script>
 
     <script src="script.js"></script>
+
+    <script>
+        (function() {
+            var setting = {
+                "height": 400,
+                "width": 755,
+                "zoom": 16,
+                "queryString": "Hotel le Paquebot Cotonou, derrière unicef, Route de l'aéroport, Cotonou, Bénin",
+                "place_id": "ChIJDTZb-N9VIxARPKvVKX_8IXA",
+                "satellite": false,
+                "centerCoord": [6.352742851768003, 2.3904444499999933],
+                "cid": "0x7021fc7f29d5ab3c",
+                "lang": "fr",
+                "cityUrl": "/benin/cotonou-15896",
+                "cityAnchorText": "Carte de Cotonou, Cotonou, Bénin",
+                "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                "embed_id": "296224"
+            };
+            var d = document;
+            var s = d.createElement('script');
+            s.src = 'https://1map.com/js/script-for-user.js?embed_id=296224';
+            s.async = true;
+            s.onload = function(e) {
+                window.OneMap.initMap(setting)
+            };
+            var to = d.getElementsByTagName('script')[0];
+            to.parentNode.insertBefore(s, to);
+        })();
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
